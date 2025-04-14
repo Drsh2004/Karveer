@@ -1,0 +1,351 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+.emblem {
+  
+  height: 80px;
+  margin-right: 15px;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #0056b3;
+}
+
+nav ul li {
+  position: relative;
+  padding: 10px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #0056b3;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  padding: 0;
+  list-style: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  background: white;
+  color: #0056b3;
+  border-radius: 5px;
+}
+
+
+#menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+#menu-toggle:hover {
+  background: white; /* Blue background on hover */
+  color:black; /* Change text color on hover */
+  border-radius: 5px;
+}
+
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #333;
+  color: white;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 10px;
+}
+
+#sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  background: #575757;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.text-section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-text img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-layout {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.key-points {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.key-points ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.map-section {
+  padding: 20px;
+}
+
+
+iframe {
+  display: block;
+  margin-bottom: 20px; /* Adds space between the map and footer */
+}
+
+.main-content {
+  flex: 1;  /* Pushes footer down */
+  padding: 20px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-link:hover {
+  opacity: 0.8; /* Optional hover effect */
+}
+
+/* regional-division */
+
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling on small screens */
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* Elections */
+.election-section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+.pdf-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pdf-list li a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+}
+.pdf-list li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Ration shops */
+
+.downloads-section,
+.important-links-section {
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.downloads-section h2,
+.important-links-section h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.downloads-section ul,
+.important-links-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.downloads-section li,
+.important-links-section li {
+  margin-bottom: 10px;
+}
+
+.downloads-section a,
+.important-links-section a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.downloads-section a:hover,
+.important-links-section a:hover {
+  color: #007bff;
+}
+
+
+/*  Footer */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  margin-top: auto;
+}
